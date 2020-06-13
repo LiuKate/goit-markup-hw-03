@@ -298,6 +298,9 @@
   justify-content: space-between;
 }
 /*Портфолио*/
+.hidden {
+  margin: 0;
+}
 .button {
   font-weight: 500;
   font-size: 16px;
