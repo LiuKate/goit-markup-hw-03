@@ -23,7 +23,6 @@
 }
 .list {
   list-style: none;
-
   margin: 0;
   padding: 0;
 }
@@ -35,20 +34,18 @@
 .section-name {
   color: var(--secondary-color);
 }
+.section {
+  padding-top: 94px;
+}
 .container {
-  width: 1215px;
-  margin-bottom: 94px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  outline: 3px solid blue;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 3px solid blue;*/
 }
-.container-hero {
-  width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--brg-secondary);
-  outline: 3px solid tomato;
-}
+
 /* Стили Шапки*/
 
 .logo {
@@ -103,12 +100,46 @@
 .contacts :focus {
   color: var(--accent-blue);
 }
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts {
+  display: flex;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 30px;
+}
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+}
+.contacts-header {
+  margin-left: auto;
+}
 /*Стили секции Герой*/
 
 .hero {
+  background-color: var(--brg-secondary);
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
+  /*outline: 3px solid tomato;*/
 }
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .main-slogan {
   color: var(--color-white);
   font-weight: 900;
@@ -150,17 +181,14 @@
   letter-spacing: 0.03em;
   margin: 0;
 }
-.benefits-list {
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
+
 .benefits-image {
   padding: 25px 100px;
   background-color: var(--bgr-primary);
   margin-bottom: 30px;
+}
+.benefits {
+  display: flex;
 }
 /*Стили секции чем мы занимаемся*/
 
@@ -186,18 +214,20 @@
   margin: 0;
   margin-bottom: 50px;
 }
-.business-item {
-  display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
+.business {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
 }
 /*Стили секции наша команда*/
+
 .team-member p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
+  margin-bottom: 16px;
 }
 .team-member-name {
   color: var(--secondary-color);
@@ -207,13 +237,32 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
+  margin-bottom: 10px;
 }
-.team-member {
-  display: inline-block;
+.our-team img {
+  margin-bottom: 30px;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+/*.team-member:not(:last-child) {
+  margin-right: 30px;
+}*/
+.our-team {
+  background-color: var(--bgr-primary);
+  padding-bottom: 94px;
+}
+/*Наши клиенты*/
+.clients {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
 }
 /*Футер*/
 .footer {
   background-color: var(--bgr-footer);
+  padding-top: 45px;
 }
 .adress-main {
   color: var(--color-white);
@@ -221,6 +270,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 8px;
 }
 .adress-links a {
   color: var(--white-footer);
@@ -235,7 +285,17 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  margin: 0;
+}
+.adress-links {
+  margin-top: 9px;
+}
+.adress-main p {
+  margin: 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 /*Портфолио*/
 .button {
@@ -245,22 +305,48 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button:not(:last-child) {
+  margin-right: 30px;
 }
 .button :hover,
 .button :focus {
   background-color: var(--bgr-accent);
   color: var(--color-white);
 }
+.portfolio-image {
+  margin-bottom: 20px;
+}
 .portfolio-item-name {
   font-style: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--secondary-color);
+  margin: 0;
+  margin-bottom: 4px;
 }
 .portfolio-item-path {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-color);
+  margin: 0;
+  margin-bottom: 20px;
+}
+.portfolio-item-presentation {
+  margin: 0;
+  max-width: 322px;
+}
+.section-portfolio {
+  padding-bottom: 94px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /*
