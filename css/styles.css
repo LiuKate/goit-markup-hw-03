@@ -200,9 +200,10 @@
 }
 /*Стили секции чем мы занимаемся*/
 
-.business > li {
+.business-item {
   color: var(--color-white);
-   width: calc((100% - 30px * 2) / 3);
+  width: 370px;
+  /*width: calc((100% - 30px * 2) / 3);*/
 }
 .business-item-name {
   background-color: var(--brg-secondary);
