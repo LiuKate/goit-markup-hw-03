@@ -51,7 +51,7 @@
 
 .logo {
   text-decoration: none;
-}
+  }
 .logo-blue {
   color: var(--accent-blue);
   font-family: Raleway;
@@ -299,6 +299,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin: 0;
 }
 .adress-links {
@@ -311,9 +312,28 @@
   display: flex;
   justify-content: space-between;
 }
+.block-adress {
+  width: calc((100%-60px) / 4);
+}
+.block-join {
+  width: calc((100%-60px) / 4);
+}
+.sign {
+color: var(--color-white);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin: 0;
+}
+.block-sign {
+width: calc((100%-60px) / 2);
+}
 /*Портфолио*/
 .hidden {
   margin: 0;
+  visibility: hidden;
 }
 .button {
   font-weight: 500;
@@ -329,7 +349,7 @@
   padding-left: 0;
   margin-right: 0;
 }
-.button:not(:last-child) {
+.button-item:not(:last-child) {
   margin-right: 30px;
 }
 .button :hover,
@@ -345,7 +365,7 @@
   width: calc((100% - 30px * 2) / 3);
 }
 .portfolio-item-name {
-  font-style: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--secondary-color);
